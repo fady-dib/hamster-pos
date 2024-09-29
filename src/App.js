@@ -3,7 +3,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async'
 
 import './App.css';
-import Landing from './pages/Landing';
+
+const Landing = React.lazy(() => import('./pages/Landing'));
 
 const App = () => {
   return (
